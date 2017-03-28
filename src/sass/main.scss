@@ -1,5 +1,6 @@
 *{
-	outline: 1px solid green;
+	margin: 0;
+	padding: 0;
 }
 $white: #fff;
 $color-principal: rgb(234, 186, 26);
@@ -14,3 +15,7 @@ $color-principal: rgb(234, 186, 26);
 @import '_logo';
 @import '_country';
 @import '_vehiculos';
+
+/*  media querys   */
+$tablet: '(max-width: 780px)';
+$celular: '(max-width: 412px)';

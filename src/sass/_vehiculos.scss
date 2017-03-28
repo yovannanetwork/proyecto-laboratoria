@@ -29,6 +29,15 @@
 		}
 		 .monto{
 			 color: $color-principal;
+			 top: 20px;
+			 position: relative;
 		 }
 		}
+}
+.boton2{
+	@extend .boton;
+	bottom: 5%;
+	#compartir{
+		@extend #buscar;
+	}
 }

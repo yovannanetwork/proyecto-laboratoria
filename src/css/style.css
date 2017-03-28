@@ -1,5 +1,6 @@
 * {
-  outline: 1px solid green; }
+  margin: 0;
+  padding: 0; }
 
 /*    mapa    */
 #mapa {
@@ -13,7 +14,8 @@
   .navbar .tool {
     font-size: 40px;
     color: #eaba1a;
-    position: relative; }
+    position: relative;
+    padding-top: 10px; }
     .navbar .tool span {
       position: absolute;
       color: #000;
@@ -22,14 +24,29 @@
       display: inline;
       top: 20px; }
 
-.cuadro, .vehiculos {
+.cuadro, .boton, .boton2, .vehiculos {
   z-index: 2;
   position: absolute;
   bottom: 70%;
   width: 100%;
   background: #fff;
   width: 25%;
-  margin: auto; }
+  margin: auto;
+  padding: 5px; }
+  .cuadro select, .boton select, .boton2 select, .vehiculos select {
+    width: 95%;
+    margin: auto;
+    border: 1px solid #eaba1a; }
+
+.boton, .boton2 {
+  padding: 0;
+  bottom: 65%; }
+  .boton #buscar, .boton2 #buscar, .boton2 #compartir {
+    width: 100%;
+    background: #eaba1a;
+    color: #fff;
+    border: 1px solid #eaba1a;
+    border-radius: 0; }
 
 .vehiculos {
   bottom: 10%;
@@ -50,6 +67,13 @@
     top: 8px;
     right: 5px; }
   .vehiculos ul .monto {
-    color: #eaba1a; }
+    color: #eaba1a;
+    top: 20px;
+    position: relative; }
+
+.boton2 {
+  bottom: 5%; }
+
+/*  media querys   */
 
 /*# sourceMappingURL=style.css.map */

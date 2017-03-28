@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar navbar-fixed-top">
 		<div class="container">
 			<div class="col-md-6 col-sm-8 col-xs-10">
 				<img src="src/img/logo-gris.jpg" class="img-responsive" alt="logo" width="300">
@@ -22,15 +22,15 @@
 			</div>
 		</div>
 	</div><!--END NAV SECTION -->
-		<div id="mapa">
+	<div id="mapa">
 			
-		</div>
-	<div id="home-sec">   
+	</div>
+	<div class="countries">   
 		<div class="container"  >
 			<div class="row">
 				<div class="cuadro text-center">
 					<h4>ORIGEN</h4>
-					 <select>
+					 <select class="opciones">
 					 	<option value="0">Seleccione</option>
 						<option value="arica">Arica</option>
 						<option value="Equique">Equique</option>
@@ -48,8 +48,9 @@
 						<option value="Coyhaique">Coyhaique</option>
 						<option value="Punta Arenas">Punta Arenas</option>
 					  </select>
+					  <span id="mensaje" style="color:red;"></span>
 					  <h4>DESTINO</h4>
-					  <select>
+					  <select class="optionDest">
 						<option value="0">Seleccione</option>
 						<option value="arica">Arica</option>
 						<option value="Equique">Equique</option>
@@ -68,6 +69,9 @@
 						  <option value="Punta Arenas">Punta Arenas</option>
 					  </select>
 				</div>
+				<div class="boton">
+					<button id="buscar">buscar</button>
+				</div>
 			</div>
 		</div>
 	</div><!--END HOME SECTION-->  
@@ -76,12 +80,15 @@
 			<div class="row">
 				<div class="vehiculos">
 					<h4 class="text-center">VEHICULOS <span>seleccione</span></h4>
-				<ul id="list-car" class="list-unstyled">
-					<li class=""><input type="radio" name="optradio"><a href="#"><img src="src/img/moto.jpg" width="50" alt=""><span class="type-car"> Motocicleta</span><span class="pull-right monto"> $3680</span><br><span class="item gris">Màximo 2 pasajeros</span></a></li>
-					<li class=""><input type="radio" name="optradio"><a href="#"><img src="src/img/auto.jpg" width="50" alt=""><span class="type-car"> Automovil</span><span class="pull-right monto"> $4890</span><br><span class="item gris">Màximo 5 pasajeros</span></a></li>
-					<li class=""><input type="radio" name="optradio"><a href="#"><img src="src/img/van.jpg" width="50" alt=""><span class="type-car"> Minivan</span><span class="pull-right monto"> $9400</span><br><span class="item gris">Màximo 10 pasajeros</span></a></li>
-					<li class=""><input type="radio" name="optradio"><a href="#"><img src="src/img/camion.jpg" width="50" alt=""><span class="type-car"> Camion</span><span class="pull-right monto"> $15040</span><br><span class="item gris">Màximo 3 pasajeros</span></a></li>
-			    </ul>
+					<ul id="list-car" class="list-unstyled">
+						<li class=""><input type="radio" name="optradio"><a href="#"><img src="src/img/moto.jpg" width="50" alt=""><span class="type-car"> Motocicleta</span><span class="pull-right monto"> $3680</span><br><span class="item gris">Màximo 2 pasajeros</span></a></li>
+						<li class=""><input type="radio" name="optradio"><a href="#"><img src="src/img/auto.jpg" width="50" alt=""><span class="type-car"> Automovil</span><span class="pull-right monto"> $4890</span><br><span class="item gris">Màximo 5 pasajeros</span></a></li>
+						<li class=""><input type="radio" name="optradio"><a href="#"><img src="src/img/van.jpg" width="50" alt=""><span class="type-car"> Minivan</span><span class="pull-right monto"> $9400</span><br><span class="item gris">Màximo 10 pasajeros</span></a></li>
+						<li class=""><input type="radio" name="optradio"><a href="#"><img src="src/img/camion.jpg" width="50" alt=""><span class="type-car"> Camion</span><span class="pull-right monto"> $15040</span><br><span class="item gris">Màximo 3 pasajeros</span></a></li>
+					</ul>
+				</div>
+				<div class="boton2">
+					<button id="compartir">compartir carro!</button>
 				</div>
 			</div>
 		</div>
@@ -96,7 +103,7 @@
 	<script src="src/js/jquery.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSqcrgTxv0Tp4xJBsza-dHapTZjOAUBqU&callback=initMap"
     async defer></script>
- 
+ 	<script src="src/js/auto.js"></script>
     <script src="src/js/map.js"></script>
 </body>
 </html>

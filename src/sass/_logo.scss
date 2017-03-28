@@ -1,8 +1,19 @@
 //  seccion navbar
 .navbar{
 	background: $white;
-	i{
+	.tool{
 		font-size: 40px;
 		color: $color-principal;
+		position: relative;
+		span{
+			position: absolute;
+			color: #000;
+			display: none;
+		}
+		.tool:hover span{
+			display: inline;
+			top: 20px;
+		}
 	}
+	
 }

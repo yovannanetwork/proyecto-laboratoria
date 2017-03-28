@@ -10,19 +10,46 @@
 
 .navbar {
   background: #fff; }
-  .navbar i {
+  .navbar .tool {
     font-size: 40px;
-    color: #eaba1a; }
+    color: #eaba1a;
+    position: relative; }
+    .navbar .tool span {
+      position: absolute;
+      color: #000;
+      display: none; }
+    .navbar .tool .tool:hover span {
+      display: inline;
+      top: 20px; }
 
 .cuadro, .vehiculos {
   z-index: 2;
   position: absolute;
-  bottom: 65%;
+  bottom: 70%;
   width: 100%;
   background: #fff;
-  width: 20%; }
+  width: 25%;
+  margin: auto; }
 
 .vehiculos {
-  bottom: 20%; }
+  bottom: 10%;
+  padding: 0 20px; }
+  .vehiculos h4 {
+    display: inline-block; }
+  .vehiculos ul li input {
+    margin: 20px 0 10px 0; }
+  .vehiculos ul li a {
+    color: #000; }
+  .vehiculos ul .item {
+    margin-left: 21%;
+    position: relative;
+    bottom: 15px; }
+  .vehiculos ul .gris {
+    color: black; }
+  .vehiculos ul img {
+    top: 8px;
+    right: 5px; }
+  .vehiculos ul .monto {
+    color: #eaba1a; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,34 @@
 .vehiculos{
 	@extend .cuadro;
-	bottom: 20%;
+	bottom: 10%;
+	padding: 0 20px;
+	h4{
+		display: inline-block;
+	}
+	 ul{
+		
+		 li{
+			 input{
+				 margin: 20px 0 10px 0;
+			 }
+			 a{
+				 color: #000;
+			 }
+		 }
+		.item{
+			margin-left: 21%;
+			position: relative;
+			bottom: 15px;
+		}
+		.gris{
+			color: rgb(0, 0, 0);
+		}
+		 img{
+			top: 8px;
+			right: 5px;
+		}
+		 .monto{
+			 color: $color-principal;
+		 }
+		}
 }

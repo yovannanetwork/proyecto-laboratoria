@@ -1,0 +1,46 @@
+* {
+  outline: 1px solid green; }
+
+/*    mapa    */
+#mapa {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0; }
+
+.navbar {
+  background: #fff; }
+  .navbar i {
+    font-size: 40px;
+    color: #eaba1a; }
+
+.cuadro, .vehiculos {
+  z-index: 2;
+  position: absolute;
+  bottom: 65%;
+  width: 100%;
+  background: #fff;
+  width: 25%; }
+
+.vehiculos {
+  bottom: 20%; }
+  .vehiculos ul {
+    width: 300px;
+    margin-bottom: 15px; }
+    .vehiculos ul li input {
+      margin: 20px 0 10px 0; }
+    .vehiculos ul .item {
+      margin-left: 30%;
+      position: relative;
+      bottom: 15px; }
+    .vehiculos ul .gris {
+      color: black; }
+    .vehiculos ul img {
+      top: 8px;
+      right: 5px; }
+    .vehiculos ul .monto {
+      color: #eaba1a; }
+    .vehiculos ul a:hover {
+      color: blueviolet; }
+
+/*# sourceMappingURL=main.css.map */

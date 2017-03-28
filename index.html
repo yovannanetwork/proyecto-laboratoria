@@ -12,11 +12,13 @@
 <body>
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
-			<div class="col-md-6">
+			<div class="col-md-6 col-sm-8 col-xs-10">
 				<img src="src/img/logo-gris.jpg" class="img-responsive" alt="logo" width="300">
 			</div>
-			<div class="col-md-6 text-right">
-				<i class="fa fa-info-circle"></i>
+			<div class="col-md-6 col-sm-4 col-xs-2 text-right">
+				<i class="fa fa-info-circle tool"><div class="tootip">
+					<span><img src="src/img/logo-peach.jpg" class="img-responsive" width="100" alt=""> La nueva forma de moverte en la ciudad. con corropomp! puedes ompartir tus viajes con amigos y cobrar el costo equivalentemente</span>
+				</div></i>
 			</div>
 		</div>
 	</div><!--END NAV SECTION -->
@@ -27,7 +29,7 @@
 		<div class="container"  >
 			<div class="row">
 				<div class="cuadro text-center">
-					<h3>ORIGEN</h3>
+					<h4>ORIGEN</h4>
 					 <select>
 					 	<option value="0">Seleccione</option>
 						<option value="arica">Arica</option>
@@ -46,7 +48,7 @@
 						<option value="Coyhaique">Coyhaique</option>
 						<option value="Punta Arenas">Punta Arenas</option>
 					  </select>
-					  <h3>DESTINO</h3>
+					  <h4>DESTINO</h4>
 					  <select>
 						<option value="0">Seleccione</option>
 						<option value="arica">Arica</option>
@@ -73,12 +75,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="vehiculos">
-					<h3>VEHICULOS <span>seleccione</span></h3>
-				<ul class="dropdown-menu" id="list-car">
-					<li class=""><a href="#"><img src="src/img/moto.jpg" width="50" alt=""><span class="type-car"> Line</span><span class="pull-right"> 3</span><br><span class="item gris">Shared, 2 riders max</span><span class="pull-right gris">min</span></a></li>
-					<li class=""><a href="#"><img src="src/img/auto.jpg" width="50" alt=""><span class="type-car"> Lyft</span><span class="pull-right"> 3</span><br><span class="item gris">4 Seats</span><span class="pull-right gris">min</span></a></li>
-					<li class=""><a href="#"><img src="src/img/auto.jpg" width="50" alt=""><span class="type-car"> Plus</span><span class="pull-right"> 3</span><br><span class="item gris">6 seats</span><span class="pull-right gris">min</span></a></li>
-					<li class=""><a href="#"><img src="src/img/camion.png" width="50" alt=""><span class="type-car"> Primier</span><span class="pull-right"> 3</span><br><span class="item gris">High-end, 4 seats</span><span class="pull-right gris">min</span></a></li>
+					<h4 class="text-center">VEHICULOS <span>seleccione</span></h4>
+				<ul id="list-car" class="list-unstyled">
+					<li class=""><input type="radio" name="optradio"><a href="#"><img src="src/img/moto.jpg" width="50" alt=""><span class="type-car"> Motocicleta</span><span class="pull-right monto"> $3680</span><br><span class="item gris">Màximo 2 pasajeros</span></a></li>
+					<li class=""><input type="radio" name="optradio"><a href="#"><img src="src/img/auto.jpg" width="50" alt=""><span class="type-car"> Automovil</span><span class="pull-right monto"> $4890</span><br><span class="item gris">Màximo 5 pasajeros</span></a></li>
+					<li class=""><input type="radio" name="optradio"><a href="#"><img src="src/img/van.jpg" width="50" alt=""><span class="type-car"> Minivan</span><span class="pull-right monto"> $9400</span><br><span class="item gris">Màximo 10 pasajeros</span></a></li>
+					<li class=""><input type="radio" name="optradio"><a href="#"><img src="src/img/camion.jpg" width="50" alt=""><span class="type-car"> Camion</span><span class="pull-right monto"> $15040</span><br><span class="item gris">Màximo 3 pasajeros</span></a></li>
 			    </ul>
 				</div>
 			</div>

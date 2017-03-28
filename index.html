@@ -4,23 +4,84 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Examen Herramientas Productividad</title>
+	<link rel="stylesheet" href="src/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="src/js/getmdl-select.js">
+	<link rel="stylesheet" href="src/css/bootstrap.min.css">
 	<link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-6"></div>
-				<div class="col-md-6"></div>
+			<div class="col-md-6">
+				<img src="src/img/logo-gris.jpg" class="img-responsive" alt="logo" width="300">
+			</div>
+			<div class="col-md-6 text-right">
+				<i class="fa fa-info-circle"></i>
 			</div>
 		</div>
 	</div><!--END NAV SECTION -->
+		<div id="mapa">
+			
+		</div>
 	<div id="home-sec">   
 		<div class="container"  >
+			<div class="row">
+				<div class="cuadro text-center">
+					<h3>ORIGEN</h3>
+					 <select>
+					 	<option value="0">Seleccione</option>
+						<option value="arica">Arica</option>
+						<option value="Equique">Equique</option>
+						<option value="Antofagasta">Antofagasta</option>
+						<option value="Calama">Calama</option>
+						<option value="serena">La serena</option>
+						<option value="Valparaiso">Valparaiso</option>
+						<option value="Santiago">Santiago</option>
+						<option value="Rancagua">Rancagua</option>
+						<option value="Talca">Talca</option>
+						<option value="Consepcion">Consepcion</option>
+						<option value="Temuco">Temuco</option>
+						<option value="Valdivia">Valdivia</option>
+						<option value="Puerto Montt">Puerto Montt</option>
+						<option value="Coyhaique">Coyhaique</option>
+						<option value="Punta Arenas">Punta Arenas</option>
+					  </select>
+					  <h3>DESTINO</h3>
+					  <select>
+						<option value="0">Seleccione</option>
+						<option value="arica">Arica</option>
+						<option value="Equique">Equique</option>
+						<option value="Antofagasta">Antofagasta</option>
+						<option value="Calama">Calama</option>
+						<option value="serena">La serena</option>
+						<option value="Valparaiso">Valparaiso</option>
+						<option value="Santiago">Santiago</option>
+						<option value="Rancagua">Rancagua</option>
+						<option value="Talca">Talca</option>
+						<option value="Consepcion">Consepcion</option>
+						<option value="Temuco">Temuco</option>
+						<option value="Valdivia">Valdivia</option>
+						<option value="Puerto Montt">Puerto Montt</option>
+						<option value="Coyhaique">Coyhaique</option>
+						  <option value="Punta Arenas">Punta Arenas</option>
+					  </select>
+				</div>
+			</div>
 		</div>
 	</div><!--END HOME SECTION-->  
 	<section id="info"  >
 		<div class="container">
+			<div class="row">
+				<div class="vehiculos">
+					<h3>VEHICULOS <span>seleccione</span></h3>
+				<ul class="dropdown-menu" id="list-car">
+					<li class=""><a href="#"><img src="src/img/moto.jpg" width="50" alt=""><span class="type-car"> Line</span><span class="pull-right"> 3</span><br><span class="item gris">Shared, 2 riders max</span><span class="pull-right gris">min</span></a></li>
+					<li class=""><a href="#"><img src="src/img/auto.jpg" width="50" alt=""><span class="type-car"> Lyft</span><span class="pull-right"> 3</span><br><span class="item gris">4 Seats</span><span class="pull-right gris">min</span></a></li>
+					<li class=""><a href="#"><img src="src/img/auto.jpg" width="50" alt=""><span class="type-car"> Plus</span><span class="pull-right"> 3</span><br><span class="item gris">6 seats</span><span class="pull-right gris">min</span></a></li>
+					<li class=""><a href="#"><img src="src/img/camion.png" width="50" alt=""><span class="type-car"> Primier</span><span class="pull-right"> 3</span><br><span class="item gris">High-end, 4 seats</span><span class="pull-right gris">min</span></a></li>
+			    </ul>
+				</div>
+			</div>
 		</div>
 	</section><!--END ABOUT SECTION-->
 	<section id="calculator" >
@@ -30,5 +91,10 @@
 	<div id="footer">
 		2014 www.yourdomain.com | All Right Reserved  
 	</div><!-- END FOOTER SECTION -->
+	<script src="src/js/jquery.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSqcrgTxv0Tp4xJBsza-dHapTZjOAUBqU&callback=initMap"
+    async defer></script>
+ 
+    <script src="src/js/map.js"></script>
 </body>
 </html>

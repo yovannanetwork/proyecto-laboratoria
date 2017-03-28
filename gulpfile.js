@@ -11,11 +11,13 @@ var minifyCSS = require('gulp-minify-css');
 gulp.task('script', function(cb){
 	// tarea script
 	return gulp.('.node_modules/jquery/dist/jquery.js').pipe(gulp.dest('./js'));
+	return gulp.('.node_modules/getmdl-select/src/getmdl-select.min.js').pipe(gulp.dest('./js'));
 });
 
 gulp.task('style', function() {
 	// tarea style
 	return gulp.('.node_modules/bootstrap/dist/css/bootstrap.min.css').pipe(gulp.dest('./css'));
+	return gulp.('.node_modules/getmdl-select/src/getmdl-select.min.css').pipe(gulp.dest('./css'));
 });
 
 gulp.task('images', function() {

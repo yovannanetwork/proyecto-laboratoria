@@ -1,0 +1,16 @@
+*{
+	outline: 1px solid green;
+}
+$white: #fff;
+$color-principal: rgb(234, 186, 26);
+/*    mapa    */
+
+#mapa{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+}
+@import '_logo';
+@import '_country';
+@import '_vehiculos';

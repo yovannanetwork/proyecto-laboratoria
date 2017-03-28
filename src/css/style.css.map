@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,CAAC;EACA,OAAO,EAAE,eAAe;;AAIzB,gBAAgB;AAEhB,KAAK;EACJ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,CAAC;;ACVV,OAAO;EACN,UAAU,EDCH,IAAI;ECAX,SAAC;IACA,SAAS,EAAE,IAAI;IACf,KAAK,EDDW,OAAiB;;AEJnC,mBAAO;EACN,OAAO,EAAE,CAAC;EACV,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,GAAG;EACX,KAAK,EAAE,IAAI;EACX,UAAU,EFFH,IAAI;EEGX,KAAK,EAAE,GAAG;;ACNX,UAAU;EAET,MAAM,EAAE,GAAG",
+"sources": ["../sass/main.scss","../sass/_logo.scss","../sass/_country.scss","../sass/_vehiculos.scss"],
 "names": [],
 "file": "style.css"
 }
